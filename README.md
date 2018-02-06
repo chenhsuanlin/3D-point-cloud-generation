@@ -25,7 +25,7 @@ The dataset can be downloaded [here](https://cmu.box.com/s/s4lkm5ej7sh4px72vesr1
 - Pre-rendered depth images for training
 - Ground-truth point clouds of the test split (densified to 100K points)
 
-After downloading, run `tar -zxf 3D-PCG-data.tar.gz`. A `data` directory will be created.  
+After downloading, run `tar -zxf 3D-PCG-data.tar.gz`. The files will be extracted to the `data` directory.  
 (Please also cite the relevant papers if you plan to use this dataset package.)
 
 ### Running the code  
