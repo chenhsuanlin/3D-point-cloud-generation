@@ -25,21 +25,29 @@ The dataset can be downloaded [here](https://cmu.box.com/s/s4lkm5ej7sh4px72vesr1
 - Pre-rendered depth images for training
 - Ground-truth point clouds of the test split (densified to 100K points)
 
-Please also cite the relevant papers if you plan to use this dataset package.
+After downloading, run `tar -zxf 3D-PCG-data.tar.gz`. A `data` directory will be created.  
+(Please also cite the relevant papers if you plan to use this dataset package.)
 
 ### Running the code  
-(to be updated soon)
+The following scripts gives examples for running the code.
+- Pretraining the network: `scripts/run-pretrain.sh`  
+- Fine-tuning with joint 2D optimization: `scripts/run-finetune.sh`  
+- Evaluating on the test set: `scripts/run-evaluate.sh`  
+- Computing the error metrics: `scripts/run-compute-error.sh`  
+
+Checkpoints are stored in `models_${GROUP}`, summaries are stored in `summary_${GROUP}`, and evaluated point clouds are stored in `results_${GROUP}`.  
+The list of optional arguments can be found by executing `python3 train.py --help`. The default training settings in this released code is slightly different from the paper but optimizes the networks better.  
+We provide two different network architectures: (1) originally from the paper (2) deeper with residual blocks. Reference performances on the test set is as follows (note that different runs will result in slightly different performances):
+
+|          | pred→GT | GT→pred |
+|:--------:|:-------:|:-------:|
+| original |  1.7342 |  1.8371 |
+|  ResNet  |  1.6723 |  1.8169 |
 
 --------------------------------------
 
-## Rendering depth images
-We also provide the code to render depth images for supervision.  
-
-### Prerequisites  
-(to be updated soon)
-
-### Running the code  
-(to be updated soon)
+## Rendering ground-truth depth images
+(coming soon!)
 
 --------------------------------------
 
