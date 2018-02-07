@@ -47,7 +47,21 @@ We provide two different network architectures: (1) originally from the paper (2
 --------------------------------------
 
 ## Rendering ground-truth depth images
-(coming soon!)
+We also provide the code to render depth images for supervision.  
+
+### Prerequisites  
+This code requires the following:
+- [Blender](https://www.blender.org/) as the rendering engine. This code was developed with Blender 2.78.  
+  After installation, please make sure the command `blender` is callable (use `which blender` to check installation).
+- The [OpenEXR Python binding](http://www.excamera.com/sphinx/articles-openexr.html) for .exr to .mat file conversion.  
+
+### Dataset  
+The raw ShapeNet dataset can be downloaded [here](https://www.shapenet.org/).  
+This rendering code was developed to use ShapeNetCore v2. (The provided depth images were rendered from ShapeNetCore v1.)
+
+### Running the code  
+Run `./run.sh 03001627 8` to render depth images for fixed and arbitrary viewpoints, and convert them to .mat files. This will convert all objects in the ShapeNet chair category (03001627) with 8 fixed viewpoints.  
+The rendered files will be stored in the `output` directory.
 
 --------------------------------------
 
