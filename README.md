@@ -47,7 +47,7 @@ We provide two different network architectures: (1) originally from the paper (2
 --------------------------------------
 
 ## Rendering ground-truth depth images
-We also provide the code to render depth images for supervision.  
+We provide the code to render depth images for supervision.  
 
 ### Prerequisites  
 This code requires the following:
@@ -60,8 +60,18 @@ The raw ShapeNet dataset can be downloaded [here](https://www.shapenet.org/).
 This rendering code was developed to use ShapeNetCore v2. (The provided depth images were rendered from ShapeNetCore v1.)
 
 ### Running the code  
-Run `./run.sh 03001627 8` to render depth images for fixed and arbitrary viewpoints, and convert them to .mat files. This will convert all objects in the ShapeNet chair category (03001627) with 8 fixed viewpoints.  
+Under `render`, run `./run.sh 03001627 8` to render depth images for fixed and arbitrary viewpoints, and convert them to .mat files. This will convert all objects in the ShapeNet chair category (03001627) with 8 fixed viewpoints.  
 The rendered files will be stored in the `output` directory.
+
+--------------------------------------
+
+## Creating densified point clouds of CAD models for evaluation
+We also provide the code to densify the vertices of CAD models to a specified number. This code can be run independently; only the ShapeNet dataset is required.
+It repeats the process of adding a vertex to the center of the longest edge of the triangular mesh and subsequently re-triangulating the mesh. This will create (generally) uniformly densified CAD models.  
+<p align="center"><img src="densify/example.png" width=400></p>
+
+### Running the code  
+Under `densify`, run `./run.sh 03001627` to run densification. The densified CAD models will be stored in the `output` directory.
 
 --------------------------------------
 
