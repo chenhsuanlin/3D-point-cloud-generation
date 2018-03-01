@@ -2,7 +2,8 @@
 Chen-Hsuan Lin, Chen Kong, and Simon Lucey  
 AAAI Conference on Artificial Intelligence (AAAI), 2018  
 
-Paper: https://www.andrew.cmu.edu/user/chenhsul/paper/AAAI2018.pdf  
+Website: https://chenhsuanlin.bitbucket.io/3D-point-cloud-generation  
+Paper: https://chenhsuanlin.bitbucket.io/3D-point-cloud-generation/paper.pdf  
 arXiv preprint: https://arxiv.org/abs/1706.07036
 
 We provide TensorFlow code for the single-category experiment (for [ShapeNet](https://www.shapenet.org/) chairs).
