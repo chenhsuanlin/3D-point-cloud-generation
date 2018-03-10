@@ -20,13 +20,17 @@ pip3 install --upgrade numpy scipy termcolor tensorflow-gpu
 If you don't have sudo access, add the `--user` flag.  
 
 ### Dataset  
-The dataset can be downloaded [here](https://cmu.box.com/s/s4lkm5ej7sh4px72vesr17b1gxam4hgy) (8.8GB). This file includes:
+The dataset (8.8GB) can be downloaded by running the command
+```
+wget https://cmu.box.com/shared/static/s4lkm5ej7sh4px72vesr17b1gxam4hgy.gz
+```
+This file includes:
 - Train/test split files (from [Perspective Transformer Nets](https://github.com/xcyan/nips16_PTN))
 - Input RGB images (from [Perspective Transformer Nets](https://github.com/xcyan/nips16_PTN))
 - Pre-rendered depth images for training
 - Ground-truth point clouds of the test split (densified to 100K points)
 
-After downloading, run `tar -zxf 3D-PCG-data.tar.gz`. The files will be extracted to the `data` directory.  
+After downloading, run `tar -zxf s4lkm5ej7sh4px72vesr17b1gxam4hgy.gz` under the main directory. The files will be extracted to the `data` directory.  
 (Please also cite the relevant papers if you plan to use this dataset package.)
 
 ### Running the code  
