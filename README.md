@@ -1,4 +1,4 @@
-# Learning Efficient Point Cloud Generation for Dense 3D Object Reconstruction
+## Learning Efficient Point Cloud Generation for Dense 3D Object Reconstruction
 Chen-Hsuan Lin, Chen Kong, and Simon Lucey  
 AAAI Conference on Artificial Intelligence (AAAI), 2018  
 
