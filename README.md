@@ -1,5 +1,7 @@
 ## Learning Efficient Point Cloud Generation for Dense 3D Object Reconstruction
-Chen-Hsuan Lin, Chen Kong, and Simon Lucey  
+[Chen-Hsuan Lin](https://chenhsuanlin.bitbucket.io/),
+[Chen Kong](https://www.cs.cmu.edu/~chenk/),
+and [Simon Lucey](http://www.simonlucey.com/)  
 AAAI Conference on Artificial Intelligence (AAAI), 2018  
 
 Website: https://chenhsuanlin.bitbucket.io/3D-point-cloud-generation  
