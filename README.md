@@ -4,7 +4,7 @@
 and [Simon Lucey](http://www.simonlucey.com/)  
 AAAI Conference on Artificial Intelligence (AAAI), 2018  
 
-Website: https://chenhsuanlin.bitbucket.io/3D-point-cloud-generation  
+Project page: https://chenhsuanlin.bitbucket.io/3D-point-cloud-generation  
 Paper: https://chenhsuanlin.bitbucket.io/3D-point-cloud-generation/paper.pdf  
 arXiv preprint: https://arxiv.org/abs/1706.07036
 
